@@ -39,6 +39,7 @@ body {
     font-size: 15px;
     font-weight: 700;
     color: hsl(183, 100%, 15%);
+    background-color: rgba(128, 128, 128, 0.212);
 }
 
 .inputGroupValorConta input::placeholder, #custom input::placeholder {
