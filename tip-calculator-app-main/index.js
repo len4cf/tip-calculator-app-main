@@ -40,8 +40,11 @@ function TipCalculator() {
             const numPeople = parseFloat(numeroPessoas.value);
             const bill = parseFloat(this.billAmount.value) / numPeople;
 
-            if (isNaN(bill) || isNaN(numPeople) || numPeople <= 0) {
-                console.log('Please enter valid values for bill amount and number of people.');
+            if (isNaN(bill) || bill <= 0) {
+                alert('Por favor, insira um valor válido para o valor da conta.');
+                return;
+            } else if (isNaN(numPeople) || numPeople <= 0 || numPeople === '') {
+                alert('Por favor, insira um valor válido para o número de pessoas.');
                 return;
             }
 
@@ -55,8 +58,14 @@ function TipCalculator() {
             const numPeople = parseFloat(numeroPessoas.value);
             const bill = parseFloat(this.billAmount.value) / numPeople;
 
-            if (isNaN(bill) || isNaN(numPeople) || numPeople <= 0) {
-                console.log('Please enter valid values for bill amount and number of people.');
+            if (isNaN(bill) || bill <= 0) {
+                alert('Por favor, insira um valor válido para o valor da conta.');
+                return;
+            } else if (isNaN(numPeople) || numPeople <= 0 || numPeople === '') {
+                alert('Por favor, insira um valor válido para o número de pessoas.');
+                return;
+            } else if (isNaN(tipPercentage) || tipPercentage <= 0) {
+                alert('Por favor, insira um valor válido para a porcentagem da gorjeta.');
                 return;
             }
 
